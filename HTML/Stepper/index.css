@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.general-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.stepper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+div.stepper-block {
+    position: relative;
+    height: 60px;
+    width: 200px;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.stepper-block-inactive {
+    background: linear-gradient(to top,  #7d7d7d 10%, #b2b2b2 50%,  #7d7d7d 90%);
+}   
+div.stepper-block-active {
+    background: linear-gradient(to top,  #3ebe4b 10%, #61fb70 50%,  #3ebe4b 90%);
+}
+.stepper-block-right-side::before, .stepper-block-central::before {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    left: 0px;
+    border-width: 30px 0 30px 15px;
+    border-color: transparent#fff;
+    border-style: solid;
+}
+.stepper-block-left-side::after, .stepper-block-central::after {
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    left: 200px;
+    border-width: 30px 0 30px 15px;
+    border-style: solid;
+}
+.stepper-block-central::after {
+    border-color: transparent #3ebe4b;
+}
+.stepper-block-left-side::after {
+    border-color: transparent #7d7d7d;
+}

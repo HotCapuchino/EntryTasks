@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="general-wrapper">
+        <form class="sign-up-form" action="none">
+            <h1 class="form__title">Регистрация</h1>
+            <hr class="form__crossing-underline">
+                <div class="form__inputs-block">
+                    <label>
+                        <div class="form__label-name">E-mail</div>
+                        <input placeholder="example@domain.com" class="form__input-whole" type="email">
+                    </label>
+                    <div class="form__password-container">
+                        <label>
+                            <div class="form__label-name">Пароль</div>
+                            <input placeholder="password" class="form__input-whole" type="password">
+                        </label>
+                        <label>
+                            <div class="form__label-name">Повторите пароль</div>
+                            <input placeholder="password" class="form__input-whole" type="password">
+                        </label>
+                    </div>
+                    <label>
+                        <div class="form__label-name">ФИО</div>
+                        <input placeholder="Игорев Игорь Игоревич" class="form__input-whole" type="text">
+                    </label>
+                    <label>
+                        <div class="form__label-name">Возраст</div>
+                        <input placeholder="18" class="form__input-half" type="number">
+                    </label>
+                </div>
+            <hr class="form__crossing-underline">
+            <div class="form__button-container">
+                <button class="form__button form__submit-button">Отправить</button>
+                <button class="form__button form__cancel-button">Отмена</button>
+            </div> 
+        </form>
+    </div>
+</body>
+</html>
